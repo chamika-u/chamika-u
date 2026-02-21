@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=200&section=header&text=Chamika%20Udara&fontSize=55&fontColor=58a6ff&animation=fadeIn&fontAlignY=38&desc=Information%20Systems%20%7C%20Tech%20%26%20Business%20Enthusiast&descAlignY=58&descSize=18&descColor=8b949e" width="100%" alt="header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=200&section=header&text=Chamika%20Udayanga&fontSize=55&fontColor=58a6ff&animation=fadeIn&fontAlignY=38&desc=Information%20Systems%20%7C%20Tech%20%26%20Business%20Enthusiast&descAlignY=58&descSize=18&descColor=8b949e" width="100%" alt="header"/>
 
 </div>
 
@@ -15,13 +15,13 @@
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> About Me
 
 ```yaml
-name        : Chamika Udara
+name        : Chamika Udayanga
 pronouns    : he / him
 degree      : BSc. (Hons) Information Systems  [Undergraduate]
 interests   : IT · Business · Software Development · Data · Innovation
 goal        : Collaborate on impactful projects and turn ideas into products
 fun_fact    : "I see something in myself. But I don't know what it is."
-status      : Open to collaborations & opportunities ��
+status      : Open to collaborations & opportunities 🟢
 ```
 
 ---
@@ -44,7 +44,7 @@ status      : Open to collaborations & opportunities ��
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
 
-### ��️ Databases & Cloud
+### 🗄️ Databases & Cloud
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
@@ -72,7 +72,7 @@ status      : Open to collaborations & opportunities ��
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=chamika-u&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b25&currStreakLabel=58a6ff" alt="GitHub Streak" width="500"/>
+<img src="https://streak-stats.demolab.com/?user=chamika-u&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b25&currStreakLabel=58a6ff" alt="GitHub Streak" width="500"/>
 
 </div>
 

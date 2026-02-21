@@ -75,6 +75,16 @@ jobs:
             && echo "— Generated streak.svg" \
             || echo "Warning: failed to generate streak.svg"
 
+      - name: Generate trophies SVG
+        env:
+          PAT_1: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          OUT_DIR: ${{ github.workspace }}/assets
+        run: |
+          node .github/scripts/generate-trophies.mjs > "$OUT_DIR/trophies.svg" \
+            && echo "— Generated trophies.svg" \
+            || echo "Warning: failed to generate trophies.svg"
+
       - name: Commit and push
         run: |
           git config user.name 'github-actions[bot]'

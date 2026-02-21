@@ -1,0 +1,74 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup github-readme-stats
+        run: |
+          git clone --depth=1 https://github.com/anuraghazra/github-readme-stats.git /tmp/grs
+          cd /tmp/grs
+          npm install
+          npm install express
+
+      - name: Generate stats SVGs
+        env:
+          PAT_1: ${{ secrets.GITHUB_TOKEN }}
+          OUT_DIR: ${{ github.workspace }}/assets
+        run: |
+          mkdir -p "$OUT_DIR"
+
+          cat << 'EOF' > /tmp/grs/server.mjs
+          import express from 'express';
+          import statsHandler from './api/index.js';
+          import topLangsHandler from './api/top-langs.js';
+
+          const app = express();
+          app.get('/api', statsHandler);
+          app.get('/api/top-langs', topLangsHandler);
+          app.listen(3000, () => console.log('Ready'));
+          EOF
+
+          cd /tmp/grs && node server.mjs &
+
+          # Wait for server to be ready (up to 30 seconds)
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:3000/api?username=chamika-u > /dev/null 2>&1 && break
+            sleep 1
+          done
+
+          curl -sf --write-out " HTTP %{http_code}" \
+            "http://localhost:3000/api?username=chamika-u&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" \
+            -o "$OUT_DIR/stats.svg" \
+            && echo "— Generated stats.svg" \
+            || echo "Warning: failed to generate stats.svg (see HTTP status above)"
+
+          curl -sf --write-out " HTTP %{http_code}" \
+            "http://localhost:3000/api/top-langs?username=chamika-u&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" \
+            -o "$OUT_DIR/top-langs.svg" \
+            && echo "— Generated top-langs.svg" \
+            || echo "Warning: failed to generate top-langs.svg (see HTTP status above)"
+
+      - name: Commit and push
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add assets/
+          git diff --staged --quiet || git commit -m "chore: update github stats [skip ci]"
+          git push

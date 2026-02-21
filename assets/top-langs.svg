@@ -1,0 +1,12 @@
+<svg width="300" height="120" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: 600 17px 'Segoe UI', Ubuntu, sans-serif; fill: #58a6ff; }
+    .text  { font: 400 13px 'Segoe UI', Ubuntu, sans-serif; fill: #c9d1d9; }
+    .sub   { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #8b949e; }
+  </style>
+  <rect width="300" height="120" rx="4.5" fill="#0d1117"/>
+  <text class="title" x="150" y="35" text-anchor="middle">Most Used Languages</text>
+  <line x1="15" y1="46" x2="285" y2="46" stroke="#30363d" stroke-width="1"/>
+  <text class="text"  x="150" y="76" text-anchor="middle">Languages are being generated…</text>
+  <text class="sub"   x="150" y="97" text-anchor="middle">Please check back shortly</text>
+</svg>

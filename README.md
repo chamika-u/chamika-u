@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=200&section=header&text=Chamika%20Udayanga&fontSize=55&fontColor=58a6ff&animation=fadeIn&fontAlignY=38&desc=Information%20Systems%20%7C%20Tech%20%26%20Business%20Enthusiast&descAlignY=58&descSize=18&descColor=8b949e" width="100%" alt="header"/>
+<img src="./assets/header.svg" width="100%" alt="header"/>
 
 </div>
 
@@ -72,7 +72,7 @@ status      : Open to collaborations & opportunities 🟢
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=chamika-u&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b25&currStreakLabel=58a6ff" alt="GitHub Streak" width="500"/>
+<img src="./assets/streak.svg" alt="GitHub Streak" width="500"/>
 
 </div>
 
@@ -127,6 +127,6 @@ status      : Open to collaborations & opportunities 🟢
 
 ### 💡 *"I see something in myself. But I don't know what it is."* ✨
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=100&section=footer" width="100%" alt="footer"/>
+<img src="./assets/footer.svg" width="100%" alt="footer"/>
 
 </div>

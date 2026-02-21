@@ -18,7 +18,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Setup github-readme-stats
         run: |
@@ -64,6 +64,16 @@ jobs:
             -o "$OUT_DIR/top-langs.svg" \
             && echo "— Generated top-langs.svg" \
             || echo "Warning: failed to generate top-langs.svg (see HTTP status above)"
+
+      - name: Generate streak SVG
+        env:
+          PAT_1: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          OUT_DIR: ${{ github.workspace }}/assets
+        run: |
+          node .github/scripts/generate-streak.mjs > "$OUT_DIR/streak.svg" \
+            && echo "— Generated streak.svg" \
+            || echo "Warning: failed to generate streak.svg"
 
       - name: Commit and push
         run: |

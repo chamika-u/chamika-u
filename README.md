@@ -6,13 +6,13 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=800&color=58A6FF&center=true&vCenter=true&multiline=false&width=650&lines=Hey+there!+I'm+Chamika+👋;BSc.+(Hons)+Information+Systems+Undergrad;IT+%26+Business+Explorer+🚀;Open+to+Collaborate+🤝;Building+ideas+into+reality+✨)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=800&color=58A6FF&center=true&vCenter=true&multiline=false&width=650&lines=Hey+there!+I'm+Chamika+👋;BSc.+(Hons)+Information+Systems+Undergrad;IT+%26+Business+Explorer+🚀;Open+to+Collaborate+🤝;Building+ideas+into+reality+✨)](https://github.com/chamika-u)
 
 </div>
 
 ---
 
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> About Me
+## 👨‍💻 About Me
 
 ```yaml
 name        : Chamika Udayanga
@@ -65,8 +65,8 @@ status      : Open to collaborations & opportunities 🟢
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=chamika-u&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chamika-u&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=chamika-u&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&cache_seconds=1800"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chamika-u&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&cache_seconds=1800"/>
 
 </div>
 

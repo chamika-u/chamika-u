@@ -9,8 +9,8 @@ const now = new Date();
 const pad = n => String(n).padStart(2, '0');
 const timestamp = `${now.getUTCFullYear()}-${pad(now.getUTCMonth() + 1)}-${pad(now.getUTCDate())} ${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())} UTC`;
 
-const badgeLabel = encodeURIComponent('Last Updated');
-const badgeValue = encodeURIComponent(timestamp);
+const badgeLabel = encodeURIComponent('Last Updated').replace(/-/g, '--');
+const badgeValue = encodeURIComponent(timestamp).replace(/-/g, '--');
 const badgeUrl = `https://img.shields.io/badge/${badgeLabel}-${badgeValue}-58a6ff?style=flat-square`;
 
 const block = `<!-- STATUS_START -->

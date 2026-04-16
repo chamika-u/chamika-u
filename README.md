@@ -72,12 +72,6 @@ status      : Open to collaborations & opportunities 🟢
 
 <div align="center">
 
-<a href="https://roadmap.sh"><img src="https://roadmap.sh/card/tall/6796688b32284498bc1bcf46?variant=dark"/></a>
-
-</div>
-
-<div align="center">
-
 <img src="./assets/streak.svg" alt="GitHub Streak" width="500"/>
 
 </div>
@@ -111,6 +105,16 @@ status      : Open to collaborations & opportunities 🟢
 | 🤖 Emerging Technologies | 🎨 UI/UX Design | 🔐 Cybersecurity Basics |
 |:---:|:---:|:---:|
 | Exploring AI & automation | User-centered experiences | Secure system practices |
+
+</div>
+
+---
+
+## 🗺️ Roadmaps
+
+<div align="center">
+
+<a href="https://roadmap.sh"><img src="https://roadmap.sh/card/wide/6796688b32284498bc1bcf46?variant=dark&roadmaps=" alt="roadmap.sh roadmap card"/></a>
 
 </div>
 

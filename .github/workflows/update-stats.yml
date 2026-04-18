@@ -89,11 +89,24 @@ jobs:
         env:
           OUT_DIR: ${{ github.workspace }}/assets
         run: |
-          curl -sf --write-out " HTTP %{http_code}" \
+          TMP_CARD="/tmp/roadmap-card-download.svg"
+          curl -sf --max-time 30 --write-out " HTTP %{http_code}" \
             "https://roadmap.sh/card/wide/6796688b32284498bc1bcf46?variant=dark" \
-            -o "$OUT_DIR/roadmap-card.svg" \
-            && echo "— Downloaded roadmap-card.svg" \
-            || echo "Warning: failed to download roadmap-card.svg (see HTTP status above)"
+            -o "$TMP_CARD" \
+            && echo "— Fetched roadmap-card.svg" \
+            || { echo "Warning: failed to download roadmap-card.svg (see HTTP status above)"; exit 0; }
+
+          # Validate: must start with <svg and be at least 5 KB (real cards are ~60-70 KB;
+          # loading/placeholder cards returned by roadmap.sh are only ~200-500 bytes)
+          if [ -f "$TMP_CARD" ] && \
+             head -c 4 "$TMP_CARD" | grep -q "<svg" && \
+             [ "$(wc -c < "$TMP_CARD")" -ge 5000 ]; then
+            mv "$TMP_CARD" "$OUT_DIR/roadmap-card.svg"
+            echo "— Saved roadmap-card.svg ($(wc -c < "$OUT_DIR/roadmap-card.svg") bytes)"
+          else
+            echo "Warning: downloaded file is not a valid/complete SVG card — keeping previous version"
+            rm -f "$TMP_CARD"
+          fi
 
       - name: Update README status timestamp
         run: node .github/scripts/update-readme-status.mjs

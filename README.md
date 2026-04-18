@@ -114,7 +114,7 @@ status      : Open to collaborations & opportunities 🟢
 
 <div align="center">
 
-<a href="https://roadmap.sh/u/chamika-u"><img src="./assets/roadmap-card.svg" alt="roadmap.sh roadmap card" width="100%"/></a>
+<a href="https://roadmap.sh/u/chamikaudayanga"><img src="./assets/roadmap-card.svg" alt="roadmap.sh roadmap card" width="100%"/></a>
 
 </div>
 

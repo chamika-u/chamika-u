@@ -85,6 +85,16 @@ jobs:
             && echo "— Generated trophies.svg" \
             || echo "Warning: failed to generate trophies.svg"
 
+      - name: Download roadmap.sh card SVG
+        env:
+          OUT_DIR: ${{ github.workspace }}/assets
+        run: |
+          curl -sf --write-out " HTTP %{http_code}" \
+            "https://roadmap.sh/card/wide/6796688b32284498bc1bcf46?variant=dark" \
+            -o "$OUT_DIR/roadmap-card.svg" \
+            && echo "— Downloaded roadmap-card.svg" \
+            || echo "Warning: failed to download roadmap-card.svg (see HTTP status above)"
+
       - name: Update README status timestamp
         run: node .github/scripts/update-readme-status.mjs
 

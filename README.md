@@ -138,7 +138,7 @@ status      : Open to collaborations & opportunities 🟢
 ### 💡 *"I see something in myself. But I don't know what it is."* ✨
 
 <!-- STATUS_START -->
-![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--05--02%2003%3A29%20UTC-58a6ff?style=flat-square)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--05--02%2007%3A52%20UTC-58a6ff?style=flat-square)
 <!-- STATUS_END -->
 
 <img src="./assets/footer.svg" width="100%" alt="footer"/>

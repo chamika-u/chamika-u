@@ -29,7 +29,7 @@ jobs:
 
       - name: Generate stats SVGs
         env:
-          PAT_1: ${{ secrets.GITHUB_TOKEN }}
+          PAT_1: ${{ secrets.PAT_1 || secrets.GH_TOKEN || github.token }}
           OUT_DIR: ${{ github.workspace }}/assets
         run: |
           mkdir -p "$OUT_DIR"
@@ -67,7 +67,7 @@ jobs:
 
       - name: Generate streak SVG
         env:
-          PAT_1: ${{ secrets.GITHUB_TOKEN }}
+          PAT_1: ${{ secrets.PAT_1 || secrets.GH_TOKEN || github.token }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
           OUT_DIR: ${{ github.workspace }}/assets
         run: |
@@ -77,7 +77,7 @@ jobs:
 
       - name: Generate trophies SVG
         env:
-          PAT_1: ${{ secrets.GITHUB_TOKEN }}
+          PAT_1: ${{ secrets.PAT_1 || secrets.GH_TOKEN || github.token }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
           OUT_DIR: ${{ github.workspace }}/assets
         run: |

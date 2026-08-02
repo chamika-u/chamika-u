@@ -65,7 +65,7 @@ status      : Open to collaborations & opportunities 🟢
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=chamika-u&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" alt="GitHub Stats"/>
+<img height="180em" src="./assets/stats.svg" alt="GitHub Stats"/>
 <img height="180em" src="./assets/top-langs.svg"/>
 
 </div>
